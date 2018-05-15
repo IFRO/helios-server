@@ -51,7 +51,8 @@ if get_from_env('DATABASE_URL', None):
     DATABASES['default']['CONN_MAX_AGE'] = 600
 
     # require SSL
-    DATABASES['default']['OPTIONS'] = {'sslmode': 'require'}
+    # DATABASES['default']['OPTIONS'] = {'sslmode': 'require'}
+    DATABASES['default']['OPTIONS'] = {}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
