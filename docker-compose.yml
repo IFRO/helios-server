@@ -1,0 +1,17 @@
+version: 1
+  services:
+    postgres:
+      image: dcm4che/postgres-dcm4chee:9.6-8
+      ports:
+        - "5432:5432"
+      env_file: docker-compose.env
+      volumes:
+        - //c/Users/<user>/var/local/dcm4chee-arc/db:/var/lib/postgresql/data
+
+    web:
+      ports:
+        - "8000:8000"
+      links:
+        - postgres:db
+      environment:
+        - DATABASE_URL='postgres://postgres:secret@db:5432/helios'        
