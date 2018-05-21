@@ -63,7 +63,7 @@ TIME_ZONE = 'America/Los_Angeles'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = get_from_env('LANGUAGE_CODE', 'en-us')
 
 SITE_ID = 1
 
@@ -133,7 +133,9 @@ MIDDLEWARE_CLASSES = (
 
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware'
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+
+    'django.middleware.locale.LocaleMiddleware'
 )
 
 ROOT_URLCONF = 'urls'
@@ -290,3 +292,14 @@ if ROLLBAR_ACCESS_TOKEN:
     'access_token': ROLLBAR_ACCESS_TOKEN,
     'environment': 'development' if DEBUG else 'production',  
   }
+
+# Linguagens
+LANGUAGES = (
+    ('en', 'English'),
+    ('pt-br', 'Brazilian Portuguese'),
+)
+
+# Local dos arquivos de traducao
+LOCALE_PATHS = (
+    ROOT_PATH + '/locale',
+)

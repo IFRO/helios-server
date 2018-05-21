@@ -1,0 +1,7 @@
+.top-bar {
+    background: #00420c;
+}
+
+.top-bar-section li a:not(.button) {
+    background: #00420c;
+}

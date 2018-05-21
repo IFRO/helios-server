@@ -20,6 +20,7 @@ import helios.views
 
 from helios import datatypes
 
+from django.utils.translation import ugettext_lazy as _
 
 # useful stuff in helios_auth
 from helios_auth.models import User, AUTH_SYSTEMS
@@ -320,7 +321,7 @@ class Election(HeliosModel):
   @property
   def pretty_eligibility(self):
     if not self.eligibility:
-      return "Anyone can vote."
+      return _("Anyone can vote.")
     else:
       return_val = "<ul>"
       
@@ -355,27 +356,27 @@ class Election(HeliosModel):
     if self.questions == None or len(self.questions) == 0:
       issues.append(
         {'type': 'questions',
-         'action': "add questions to the ballot"}
+         'action': _("add questions to the ballot")}
         )
   
     trustees = Trustee.get_by_election(self)
     if len(trustees) == 0:
       issues.append({
           'type': 'trustees',
-          'action': "add at least one trustee"
+          'action': _("add at least one trustee")
           })
 
     for t in trustees:
       if t.public_key == None:
         issues.append({
-            'type': 'trustee keypairs',
-            'action': 'have trustee %s generate a keypair' % t.name
+            'type':'trustee keypairs',
+            'action': _('have trustee %s generate a keypair') % t.name
             })
 
     if self.voter_set.count() == 0 and not self.openreg:
       issues.append({
           "type" : "voters",
-          "action" : 'enter your voter list (or open registration to the public)'
+          "action" : _('enter your voter list (or open registration to the public)')
           })
 
     return issues    
@@ -499,7 +500,7 @@ class Election(HeliosModel):
     election is frozen when the voter registration, questions, and trustees are finalized
     """
     if len(self.issues_before_freeze) > 0:
-      raise Exception("cannot freeze an election that has issues")
+      raise Exception(_("cannot freeze an election that has issues"))
 
     self.frozen_at = datetime.datetime.utcnow()
     
@@ -655,9 +656,9 @@ class ElectionLog(models.Model):
   a log of events for an election
   """
 
-  FROZEN = "frozen"
-  VOTER_FILE_ADDED = "voter file added"
-  DECRYPTIONS_COMBINED = "decryptions combined"
+  FROZEN = _("frozen")
+  VOTER_FILE_ADDED = _("voter file added")
+  DECRYPTIONS_COMBINED = _("decryptions combined")
 
   election = models.ForeignKey(Election)
   log = models.CharField(max_length=500)
@@ -1053,7 +1054,7 @@ class CastVote(HeliosModel):
   def verify_and_store(self):
     # if it's quarantined, don't let this go through
     if self.is_quarantined:
-      raise Exception("cast vote is quarantined, verification and storage is delayed.")
+      raise Exception(_("cast vote is quarantined, verification and storage is delayed."))
 
     result = self.vote.verify(self.voter.election)
 
@@ -1078,7 +1079,7 @@ class CastVote(HeliosModel):
     
     # check the election
     if self.vote.election_uuid != election.uuid:
-      issues.append("the vote's election UUID does not match the election for which this vote is being cast")
+      issues.append(_("the vote's election UUID does not match the election for which this vote is being cast"))
     
     return issues
     

@@ -1,3 +1,6 @@
+docker container run -it -e C_FORCE_ROOT=true -e LANGUAGE_CODE='pt-br' -e SITE_TITLE='Sistema de Eleições' -e WELCOME_MESSAGE='Bem vindo ao sistema de votação do IFRO' -e DATABASE_URL='postgres://postgres:secret@db:5432/helios' -e GOOGLE_CLIENT_ID='971588061148-o39v4cpcn3boot8sp2074nlrh9saq556.apps.googleusercontent.com' -e GOOGLE_CLIENT_SECRET='CmupRW1176U4B8qcKlrlMhM5' --link postgresdb:db -p 8000:8000 -v C:/Users/2199485/code/helios-server/:/var/opt/helios-server --name=helios4 jorge:4
+
+
 version: 1
   services:
     postgres:
@@ -14,4 +17,6 @@ version: 1
       links:
         - postgres:db
       environment:
-        - DATABASE_URL='postgres://postgres:secret@db:5432/helios'        
+        - DATABASE_URL='postgres://postgres:secret@db:5432/helios'
+        - GOOGLE_CLIENT_ID='971588061148-o39v4cpcn3boot8sp2074nlrh9saq556.apps.googleusercontent.com'
+        - GOOGLE_CLIENT_SECRET='CmupRW1176U4B8qcKlrlMhM5'

@@ -5,4 +5,6 @@ python -m virtualenv env && \
 /bin/bash -c "source env/bin/activate" && \
 pip install -r requirements.txt && \
 sh ./reset.sh && \
+python manage.py compilemessages && \
+sh -c "python manage.py celeryd &" && \
 python manage.py runserver 0.0.0.0:8000

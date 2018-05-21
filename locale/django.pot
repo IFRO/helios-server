@@ -1,0 +1,830 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-18 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: helios/forms.py:14
+msgid "Short Name"
+msgstr ""
+
+#: helios/forms.py:14
+msgid "no spaces, will be part of the URL for your election, e.g. my-club-2010"
+msgstr ""
+
+#: helios/forms.py:15 helios/templates/voters_list.html:120
+#: helios/templates/voters_manage.html:27
+#: helios/templates/voters_upload_confirm.html:11
+msgid "Name"
+msgstr ""
+
+#: helios/forms.py:15
+msgid "the pretty name for your election, e.g. My Club 2010 Election"
+msgstr ""
+
+#: helios/forms.py:16
+msgid "Description"
+msgstr ""
+
+#: helios/forms.py:17
+msgid "type"
+msgstr ""
+
+#: helios/forms.py:18
+msgid "Use voter aliases"
+msgstr ""
+
+#: helios/forms.py:18
+msgid ""
+"If selected, voter identities will be replaced with aliases, e.g. \"V12\", "
+"in the ballot tracking center"
+msgstr ""
+
+#: helios/forms.py:20
+msgid "Randomize answer order"
+msgstr ""
+
+#: helios/forms.py:20
+msgid ""
+"enable this if you want the answers to questions to appear in random order "
+"for each voter"
+msgstr ""
+
+#: helios/forms.py:21
+msgid "Private?"
+msgstr ""
+
+#: helios/forms.py:21
+msgid "A private election is only visible to registered voters."
+msgstr ""
+
+#: helios/forms.py:22
+msgid "Help Email Address"
+msgstr ""
+
+#: helios/forms.py:22
+msgid "An email address voters should contact if they need help."
+msgstr ""
+
+#: helios/forms.py:25
+msgid "Election Info Download URL"
+msgstr ""
+
+#: helios/forms.py:25
+msgid ""
+"the URL of a PDF document that contains extra election information, e.g. "
+"candidate bios and statements"
+msgstr ""
+
+#: helios/forms.py:28
+msgid "Voting starts at"
+msgstr ""
+
+#: helios/forms.py:28
+msgid "UTC date and time when voting begins"
+msgstr ""
+
+#: helios/forms.py:30
+msgid "Voting ends at"
+msgstr ""
+
+#: helios/forms.py:30
+msgid "UTC date and time when voting ends"
+msgstr ""
+
+#: helios/forms.py:34
+msgid "UTC date and time voting extended to"
+msgstr ""
+
+#: helios/forms.py:40 helios/forms.py:45
+msgid "Send To"
+msgstr ""
+
+#: helios/forms.py:40 helios/forms.py:45
+msgid "all voters"
+msgstr ""
+
+#: helios/forms.py:40
+msgid "voters who have cast a ballot"
+msgstr ""
+
+#: helios/forms.py:40
+msgid "voters who have not yet cast a ballot"
+msgstr ""
+
+#: helios/forms.py:45
+msgid "only voters who cast a ballot"
+msgstr ""
+
+#: helios/forms.py:45
+msgid "no one -- are you sure about this?"
+msgstr ""
+
+#: helios/forms.py:48
+msgid "Voter ID"
+msgstr ""
+
+#: helios/models.py:324
+msgid "Anyone can vote."
+msgstr ""
+
+#: helios/models.py:359
+msgid "add questions to the ballot"
+msgstr ""
+
+#: helios/models.py:366
+msgid "add at least one trustee"
+msgstr ""
+
+#: helios/models.py:373
+#, python-format
+msgid "have trustee %s generate a keypair"
+msgstr ""
+
+#: helios/models.py:379
+msgid "enter your voter list (or open registration to the public)"
+msgstr ""
+
+#: helios/models.py:503
+msgid "cannot freeze an election that has issues"
+msgstr ""
+
+#: helios/models.py:659
+msgid "frozen"
+msgstr ""
+
+#: helios/models.py:660
+msgid "voter file added"
+msgstr ""
+
+#: helios/models.py:661
+msgid "decryptions combined"
+msgstr ""
+
+#: helios/models.py:1057
+msgid "cast vote is quarantined, verification and storage is delayed."
+msgstr ""
+
+#: helios/models.py:1082
+msgid ""
+"the vote's election UUID does not match the election for which this vote is "
+"being cast"
+msgstr ""
+
+#: helios/tasks.py:94
+msgid "encrypted tally computed"
+msgstr ""
+
+#: helios/tasks.py:95
+#, python-format
+msgid ""
+"\n"
+"The encrypted tally for election %s has been computed.\n"
+"\n"
+"--\n"
+"Helios\n"
+msgstr ""
+
+#: helios/tasks.py:110
+msgid "Helios Decrypt"
+msgstr ""
+
+#: helios/tasks.py:111
+#, python-format
+msgid ""
+"\n"
+"Helios has decrypted its portion of the tally\n"
+"for election %s.\n"
+"\n"
+"--\n"
+"Helios\n"
+msgstr ""
+
+#: helios/tasks.py:124
+msgid "voter file processed"
+msgstr ""
+
+#: helios/tasks.py:125
+#, python-format
+msgid ""
+"\n"
+"Your voter file upload for election %s\n"
+"has been processed.\n"
+"\n"
+"%s voters have been created.\n"
+"\n"
+"--\n"
+"Helios\n"
+msgstr ""
+
+#: helios/templates/elections_administered.html:4
+msgid "Elections you Administer"
+msgstr ""
+
+#: helios/templates/elections_administered.html:4
+#: helios/templates/elections_voted.html:4
+msgid "back to home"
+msgstr ""
+
+#: helios/templates/elections_administered.html:8
+msgid "voters"
+msgstr ""
+
+#: helios/templates/elections_administered.html:8
+msgid "cast votes"
+msgstr ""
+
+#: helios/templates/elections_voted.html:4
+msgid "Elections where you voted"
+msgstr ""
+
+#: helios/templates/release_result.html:3
+#, python-format
+msgid "Release Result &mdash; %(election_name)s"
+msgstr ""
+
+#: helios/templates/release_result.html:5
+msgid "Release Result"
+msgstr ""
+
+#: helios/templates/release_result.html:5
+msgid "cancel"
+msgstr ""
+
+#: helios/templates/release_result.html:8
+msgid "You are about to release the result for this election."
+msgstr ""
+
+#: helios/templates/release_result.html:14
+msgid "Send email to voters reporting release of result."
+msgstr ""
+
+#: helios/templates/release_result.html:16
+msgid "release result!"
+msgstr ""
+
+#: helios/templates/trustee_home.html:4
+msgid "Trustee"
+msgstr ""
+
+#: helios/templates/trustee_home.html:4
+msgid "Home"
+msgstr ""
+
+#: helios/templates/trustee_home.html:8
+msgid "You have successfully uploaded your public key."
+msgstr ""
+
+#: helios/templates/trustee_home.html:9
+msgid "Your public key fingerprint is:"
+msgstr ""
+
+#: helios/templates/trustee_home.html:10
+msgid "You can"
+msgstr ""
+
+#: helios/templates/trustee_home.html:10
+msgid "verify that you have the right secret key"
+msgstr ""
+
+#: helios/templates/trustee_home.html:12
+msgid "setup your key"
+msgstr ""
+
+#: helios/templates/trustee_home.html:19
+msgid "You have successfully uploaded your decryption."
+msgstr ""
+
+#: helios/templates/trustee_home.html:21
+msgid "The encrypted tally for this election is ready."
+msgstr ""
+
+#: helios/templates/trustee_home.html:22
+msgid "decrypt with your key"
+msgstr ""
+
+#: helios/templates/trustee_home.html:25
+msgid ""
+"\n"
+"Once the tally is computed, come back here to provide your secret key for "
+"decryption purposes.<br />\n"
+"You should keep the email with your trustee homepage link, which contains "
+"the credentials needed to get back here.\n"
+msgstr ""
+
+#: helios/templates/voters_eligibility.html:3
+#, python-format
+msgid "Voter Eligibility for %(election_name)s"
+msgstr ""
+
+#: helios/templates/voters_eligibility.html:5
+msgid "Voter Eligibility"
+msgstr ""
+
+#: helios/templates/voters_eligibility.html:5
+msgid "back to voters"
+msgstr ""
+
+#: helios/templates/voters_eligibility.html:12
+#, python-format
+msgid ""
+"\n"
+"You may limit eligibility of voters to one of these categories, as defined "
+"by %(user_user_type)s:\n"
+msgstr ""
+
+#: helios/templates/voters_eligibility.html:25
+msgid "set eligibility"
+msgstr ""
+
+#: helios/templates/voters_email.html:3
+#, python-format
+msgid "Contact Voters for %(election_name)s"
+msgstr ""
+
+#: helios/templates/voters_email.html:12
+msgid "Contact Voters"
+msgstr ""
+
+#: helios/templates/voters_email.html:12 helios/templates/voters_email.html:60
+#: helios/templates/voters_list.html:9 helios/templates/voters_manage.html:4
+#: helios/templates/voters_search.html:4 helios/templates/voters_upload.html:4
+#: helios/templates/voters_upload_confirm.html:4
+msgid "back to election"
+msgstr ""
+
+#: helios/templates/voters_email.html:16
+#, python-format
+msgid ""
+"\n"
+"    You are sending this email to a specific user: <b>%(voter_name)s "
+"(%(voter_id)s)</b>\n"
+"    "
+msgstr ""
+
+#: helios/templates/voters_email.html:35
+msgid "Subject:"
+msgstr ""
+
+#: helios/templates/voters_email.html:41
+msgid ""
+"You may tweak the subject and add a custom message using the form below."
+msgstr ""
+
+#: helios/templates/voters_email.html:52
+msgid "Send"
+msgstr ""
+
+#: helios/templates/voters_email.html:60
+msgid "Done, go"
+msgstr ""
+
+#: helios/templates/voters_email.html:64
+msgid "Error emailing participants. Check server settings, make sure there"
+msgstr ""
+
+#: helios/templates/voters_list.html:4
+#, python-format
+msgid ""
+"\n"
+"Voters &amp; Ballot Tracking Center for %(election_name)s\n"
+msgstr ""
+
+#: helios/templates/voters_list.html:9
+msgid "Voters and Ballot Tracking Center"
+msgstr ""
+
+#: helios/templates/voters_list.html:12
+msgid "Who can vote?"
+msgstr ""
+
+#: helios/templates/voters_list.html:16
+msgid "Only the voters listed here"
+msgstr ""
+
+#: helios/templates/voters_list.html:22
+msgid ""
+"Your election is marked private, which means you cannot open registration up "
+"more widely"
+msgstr ""
+
+#: helios/templates/voters_list.html:24
+msgid "You can change this setting:"
+msgstr ""
+
+#: helios/templates/voters_list.html:27
+msgid "anyone can vote"
+msgstr ""
+
+#: helios/templates/voters_list.html:28
+msgid "only voters listed explicitly below can vote"
+msgstr ""
+
+#: helios/templates/voters_list.html:30
+msgid "only voters who are members of"
+msgstr ""
+
+#: helios/templates/voters_list.html:44
+msgid "email voters"
+msgstr ""
+
+#: helios/templates/voters_list.html:50
+msgid "searching for"
+msgstr ""
+
+#: helios/templates/voters_list.html:50
+msgid "clear search"
+msgstr ""
+
+#: helios/templates/voters_list.html:52 helios/templates/voters_manage.html:6
+msgid "search"
+msgstr ""
+
+#: helios/templates/voters_list.html:61 helios/templates/voters_manage.html:9
+msgid "bulk upload voters"
+msgstr ""
+
+#: helios/templates/voters_list.html:65
+msgid "Prior Bulk Uploads:"
+msgstr ""
+
+#: helios/templates/voters_list.html:74
+msgid "bytes, at"
+msgstr ""
+
+#: helios/templates/voters_list.html:76
+#, python-format
+msgid "done processing: %(vf_num_voters)s voters loaded"
+msgstr ""
+
+#: helios/templates/voters_list.html:80
+msgid "currently processing"
+msgstr ""
+
+#: helios/templates/voters_list.html:82
+msgid "not yet processed"
+msgstr ""
+
+#: helios/templates/voters_list.html:98
+msgid "cast vote"
+msgstr ""
+
+#: helios/templates/voters_list.html:100
+msgid "no votes yet"
+msgstr ""
+
+#: helios/templates/voters_list.html:106
+msgid "previous"
+msgstr ""
+
+#: helios/templates/voters_list.html:109
+#, python-format
+msgid ""
+"\n"
+"Voters %(vp_start_index)s - %(vp_end_index)s (of %(tv)s)&nbsp;&nbsp;\n"
+msgstr ""
+
+#: helios/templates/voters_list.html:114
+#: helios/templates/voters_manage.html:15
+#: helios/templates/voters_manage.html:23
+msgid "next"
+msgstr ""
+
+#: helios/templates/voters_list.html:124
+#: helios/templates/voters_manage.html:27
+msgid "Alias"
+msgstr ""
+
+#: helios/templates/voters_list.html:126
+msgid "Smart Ballot Tracker"
+msgstr ""
+
+#: helios/templates/voters_manage.html:4
+msgid "Manage Voters"
+msgstr ""
+
+#: helios/templates/voters_manage.html:12
+msgid "Voters"
+msgstr ""
+
+#: helios/templates/voters_manage.html:20
+msgid "back to start"
+msgstr ""
+
+#: helios/templates/voters_manage.html:27
+msgid "Username"
+msgstr ""
+
+#: helios/templates/voters_manage.html:32
+msgid "are you sure you want to remove"
+msgstr ""
+
+#: helios/templates/voters_search.html:7
+msgid "Voter Found"
+msgstr ""
+
+#: helios/templates/voters_search.html:9
+msgid "email this voter"
+msgstr ""
+
+#: helios/templates/voters_search.html:11
+msgid "once this election is frozen, you"
+msgstr ""
+
+#: helios/templates/voters_search.html:14
+msgid "no such voter found"
+msgstr ""
+
+#: helios/templates/voters_upload.html:4
+#: helios/templates/voters_upload_confirm.html:4
+msgid "Bulk Upload Voters"
+msgstr ""
+
+#: helios/templates/voters_upload.html:8
+msgid ""
+"\n"
+"    If you would like to specify your list of voters by name and email "
+"address,<br />\n"
+"    you can bulk upload a list of such voters here.<br /><br />\n"
+"\n"
+"    Please prepare a text file of comma-separated values with the fields:\n"
+"    "
+msgstr ""
+
+#: helios/templates/voters_upload.html:20
+msgid "For example:"
+msgstr ""
+
+#: helios/templates/voters_upload.html:29
+msgid ""
+"The easiest way to prepare such a file is to use a spreadsheet program and "
+"to export as \"CSV\"."
+msgstr ""
+
+#: helios/templates/voters_upload.html:44
+msgid "OK, done uploading."
+msgstr ""
+
+#: helios/templates/voters_upload.html:45
+msgid "You can now"
+msgstr ""
+
+#: helios/templates/voters_upload.html:45
+msgid "view the list of voters"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:4
+msgid "Confirm"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:7
+msgid ""
+"You have uploaded a file of voters. The first few rows of this file are:"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:11
+msgid "Voter Login"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:11
+msgid "Email Address"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:19
+msgid "HOLD ON:"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:26
+msgid "never mind, upload a different file"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:32
+msgid "Does this look right to you?"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:34
+msgid "Yes, let"
+msgstr ""
+
+#: helios/templates/voters_upload_confirm.html:37
+msgid "no, let me upload a different file"
+msgstr ""
+
+#: helios/views.py:163
+msgid "only an administrator has elections to administer"
+msgstr ""
+
+#: helios/views.py:181
+msgid "only an administrator can create an election"
+msgstr ""
+
+#: helios/views.py:213 helios/views.py:246
+#, python-format
+msgid "An election with short name %s already exists"
+msgstr ""
+
+#: helios/views.py:215
+msgid "No special characters allowed in the short name."
+msgstr ""
+
+#: helios/views.py:331
+#, python-format
+msgid "Vote in %s"
+msgstr ""
+
+#: helios/views.py:333
+#, python-format
+msgid "Register to vote in %s"
+msgstr ""
+
+#: helios/views.py:337
+#, python-format
+msgid "Results are in for %s"
+msgstr ""
+
+#: helios/views.py:442
+#, python-format
+msgid ""
+"\n"
+"\n"
+"You are a trustee for %s.\n"
+"\n"
+"Your trustee dashboard is at\n"
+"\n"
+"  %s\n"
+"  \n"
+"--\n"
+"Helios  \n"
+msgstr ""
+
+#: helios/views.py:454
+#, python-format
+msgid "your trustee homepage for %s"
+msgstr ""
+
+#: helios/views.py:885
+msgid "Vote removed"
+msgstr ""
+
+#: helios/views.py:886
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Your vote were removed from the election \"%s\".\n"
+"  \n"
+"--\n"
+"Helios  \n"
+msgstr ""
+
+#: helios/views.py:896
+#, python-format
+msgid "Voter %s/%s and their vote were removed after election frozen"
+msgstr ""
+
+#: helios/views.py:900
+#, python-format
+msgid "Voter %s/%s removed after election frozen"
+msgstr ""
+
+#: helios/views.py:1010
+msgid "registration is closed for this election"
+msgstr ""
+
+#: helios/views.py:1109
+#, python-format
+msgid "%s - trustee partial decryption"
+msgstr ""
+
+#: helios/views.py:1109
+#, python-format
+msgid "trustee %s (%s) did their partial decryption."
+msgstr ""
+
+#: helios/views.py:1308
+msgid ""
+"your CSV file could not be processed. Please check that it is a proper CSV "
+"file."
+msgstr ""
+
+#: helios/views.py:1312
+msgid ""
+"those don't look like correct email addresses. Are you sure you uploaded a "
+"file with email address as second field?"
+msgstr ""
+
+#: helios/views.py:1316
+msgid "no voter file specified, try again"
+msgstr ""
+
+#: helios/views.py:1336
+msgid "Time to Vote"
+msgstr ""
+
+#: helios/views.py:1337
+msgid "Simple"
+msgstr ""
+
+#: helios/views.py:1338
+msgid "Additional Info"
+msgstr ""
+
+#: helios/views.py:1339
+msgid "Election Result"
+msgstr ""
+
+#: server_ui/templates/index.html:14
+msgid "Helios offers <b>verifiable online elections"
+msgstr ""
+
+#: server_ui/templates/index.html:16
+msgid ""
+"We believe democracy is important, whether it’s your book club, parent-"
+"teacher association, student government, workers’ union, or state. So we’ve "
+"made truly verifiable elections as easy as everything else on the Web."
+msgstr ""
+
+#: server_ui/templates/index.html:19
+msgid "Helios elections are:"
+msgstr ""
+
+#: server_ui/templates/index.html:21
+msgid "private"
+msgstr ""
+
+#: server_ui/templates/index.html:21
+msgid "no one knows how you voted."
+msgstr ""
+
+#: server_ui/templates/index.html:22
+msgid "verifiable"
+msgstr ""
+
+#: server_ui/templates/index.html:22
+msgid "each voter gets a tracking number."
+msgstr ""
+
+#: server_ui/templates/index.html:23
+msgid "proven"
+msgstr ""
+
+#: server_ui/templates/index.html:23
+msgid ""
+"Helios is open-source, vetted by top-tier experts, and in use by major "
+"organizations."
+msgstr ""
+
+#: server_ui/templates/index.html:27
+msgid "More than <b>100,000 votes</b> have been cast using Helios."
+msgstr ""
+
+#: server_ui/templates/index.html:31
+msgid "create an election"
+msgstr ""
+
+#: server_ui/templates/index.html:49
+msgid "no featured elections at the moment"
+msgstr ""
+
+#: server_ui/templates/index.html:61
+msgid "create election"
+msgstr ""
+
+#: server_ui/templates/index.html:62
+msgid "Administration"
+msgstr ""
+
+#: server_ui/templates/index.html:70
+msgid "none yet"
+msgstr ""
+
+#: server_ui/templates/index.html:73 server_ui/templates/index.html.py:88
+msgid "see all"
+msgstr ""
+
+#: server_ui/templates/index.html:78
+msgid "Recent Votes"
+msgstr ""
+
+#: server_ui/templates/index.html:92
+msgid "Log In to Start Voting"
+msgstr ""
+
+#: server_ui/templates/index.html:96
+msgid ""
+"Select an election to start voting. You will be asked for your voting "
+"credentials after you complete a ballot."
+msgstr ""
